@@ -35,7 +35,7 @@ h2 {
     
 }
 
-.centered {
+h1 {
     position: absolute;
     text-align: center;
     color: white;
@@ -105,8 +105,14 @@ header {
 /* display flex for a div around my projects, justify/align items center, flex direction col. input source images, and then size accordingly */
 
  @media screen and (max-width:713px) {
-    .centered{
+    h1 {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 1.25rem;
     }
 }
 
