@@ -26,6 +26,7 @@ h2 {
     display: flex;
     margin: auto;
     height: 450px;
+    border: 3px solid #666;
 }
 .card {
     display: block;
@@ -34,7 +35,7 @@ h2 {
     
 }
 
-/* .centered {
+.centered {
     position: absolute;
     text-align: center;
     color: white;
@@ -45,7 +46,8 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-}*/
+    border: 2px solid #eee;
+}
 
 .links {
     display: inline-flex;
@@ -98,12 +100,66 @@ header {
 .place-holder h4 {
     background-image: url("./binary.jpg");
     color: cyan;
+    border: 2px  solid #eee;
 }
 /* display flex for a div around my projects, justify/align items center, flex direction col. input source images, and then size accordingly */
 
-/* @media(min/max-width:"number here") {
-    selector{
-        width:
-        height:
+ @media screen and (max-width:713px) {
+    .centered{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero {
+        height: 380px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .hero {
+        height: 280px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main {
+        height: 380px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .main {
+        height: 280px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .place-holder {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .place-holder {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:355px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
 }
