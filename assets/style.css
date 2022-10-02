@@ -26,6 +26,7 @@ h2 {
     display: flex;
     margin: auto;
     height: 450px;
+    border: 3px solid #666;
 }
 .card {
     display: block;
@@ -44,7 +45,8 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    border: 2px solid #eee;
 }
 
 .links {
@@ -67,10 +69,18 @@ header {
 }
 
 .main {
-    height: 200px;
-    width: 200px;
-    margin: auto;
+    padding: 5px 0;
+    height: 400px;
+    width: 470px;
+    margin: 0 auto 5px auto;
+    background-image: url("./mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px  solid #eee;
+}
 
+.main h4 {
+    color:black
 }
 
 .class-wrapper {
@@ -78,4 +88,78 @@ header {
     justify-content: center;
 }
 
+.place-holder {
+    /* padding: 5px, 0; */
+    height: 150px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto 0 auto;
+}
+
+.place-holder h4 {
+    background-image: url("./binary.jpg");
+    color: cyan;
+    border: 2px  solid #eee;
+}
 /* display flex for a div around my projects, justify/align items center, flex direction col. input source images, and then size accordingly */
+
+ @media screen and (max-width:713px) {
+    .centered{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero {
+        height: 380px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .hero {
+        height: 280px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main {
+        height: 380px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .main {
+        height: 280px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .place-holder {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .place-holder {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:355px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
